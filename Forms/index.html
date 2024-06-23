@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Window</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form>
+      <div class="name">
+        <label for="username">Name:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Name"
+        />
+      </div>
+      <br />
+      <div class="age">
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" />
+      </div>
+      <br />
+      <div class="gender">
+        <label for="">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female" />
+        <label for="Female">Female</label>
+        <input type="radio" id="Others" name="gender" value="Others" />
+        <label for="Others">Others</label>
+      </div>
+      <br />
+      <div class="college">
+        <label for="college_name">College Name:</label>
+        <input
+          type="text"
+          name="college_name"
+          id="college_name"
+          placeholder="College"
+        />
+      </div>
+      <br />
+      <div class="events">
+        <label for="">Event Checklist:</label><br />
+
+        <input type="checkbox" name="Event1" />
+        <label for="Event1">Wolf Of Wallstreet</label><br />
+
+        <input type="checkbox" name="Event2" />
+        <label for="Event2">E-Poster</label><br />
+
+        <input type="checkbox" name="Event3" />
+        <label for="Event3">Hack in the dark</label><br />
+
+        <input type="checkbox" name="Event4" />
+        <label for="Event4">Quantum Assembler</label><br />
+
+        <input type="checkbox" name="Event5" />
+        <label for="Event5">Wisdom War</label><br />
+
+        <input type="checkbox" name="Event6" />
+        <label for="Event6">Quiz Competition</label><br />
+
+        <input type="checkbox" name="Event7" />
+        <label for="Event7">TreasurHunt</label><br />
+      </div>
+      <div class="misc">
+        <br />
+        <label for="publicity">Where did you get to know about us: </label>
+        <select name="publicity" id="publicity">
+          <option value="publicity_team">Publicity Team</option>
+          <option value="instagram">Instagram</option>
+          <option value="youtube">YouTube</option>
+          <option value="friends">Friends</option>
+          <option value="Other Sources">Other Sources</option>
+        </select>
+        <br />
+        <br />
+        <label for="suggestions">Any suggestions?</label>
+        <br />
+        <textarea
+          name="suggestions"
+          cols="30"
+          rows="2"
+          id="suggestions"
+          placeholder="Enter Your suggestions here"
+        ></textarea>
+        <br>
+        <br>
+        <button>Submit</button>
+      </div>
+      <br />
+    </form>
+
+  </body>
+</html>
