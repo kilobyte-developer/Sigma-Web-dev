@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeff2;
+}
+
+.container {
+    margin: 5%;
+    height: 70vh;
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.image1 {
+    background-image: url(pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+    height: 50%;
+    width: 90%;
+    margin: 10px auto;
+    background-size: cover;
+    border-radius: 12px;
+}
+.cat_text {
+    height: 4vh;
+    width: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #eaeff2;
+}
+.category {
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+    justify-content: start;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+.description{
+    background-color: #171a16;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-radius: 25px;
+    padding: 0 7px;
+    color: rgb(60, 60, 255);
+    background-color: rgba(60, 60, 255, 0.212);
+}
+button:hover{
+    background-color: rgba(60, 60, 255, 0.473);
+    color: #39e903;
+    transition: 0.2sec ease;
+
+}
