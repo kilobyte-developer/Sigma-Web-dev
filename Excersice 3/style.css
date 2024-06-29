@@ -10,7 +10,7 @@
 
 .container {
     margin: 5%;
-    height: 70vh;
+    height: 75vh;
     width: 20vw;
     overflow: hidden;
     border-radius: 15px;
@@ -18,10 +18,16 @@
 }
 
 .image1 {
-    background-image: url(pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
     height: 50%;
     width: 90%;
     margin: 10px auto;
+    border-radius: 12px;
+
+    
+}
+.image1 img {
+    height: 100%;
+    width: 100%;
     background-size: cover;
     border-radius: 12px;
 }
@@ -31,9 +37,9 @@
     overflow: hidden;
     border-radius: 20px;
     padding: 0 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    background-color: #eaeff2;
+    margin: 5px 5px 0px 5px;
+    background-color: #ffffff;
+    border: 2px solid rgb(201, 201, 201) 
 }
 .category {
     position: relative;
@@ -42,25 +48,12 @@
     justify-content: start;
     align-items: center;
     background-color: #ffffff;
-
 }
-.description{
-    background-color: #171a16;
+.title{
+    padding: 0;
+    font-weight: 500;
 }
-.button1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-button{
-    border-radius: 25px;
-    padding: 0 7px;
-    color: rgb(60, 60, 255);
-    background-color: rgba(60, 60, 255, 0.212);
-}
-button:hover{
-    background-color: rgba(60, 60, 255, 0.473);
-    color: #39e903;
-    transition: 0.2sec ease;
-
+.desc{
+    color: black;
+    background-color: blue;
 }
