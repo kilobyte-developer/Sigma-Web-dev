@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Selector</title>
+    <style>
+        body {
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+            transition: background-color 0.5s ease-in-out;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #gender-slider {
+            -webkit-appearance: none;
+            width: 200%;
+            height: 40px;
+            border-radius: 20px;
+            background: linear-gradient(to right, blue, #FF69B4);
+            outline: none;
+            padding: 0;
+            margin: 0;
+        }
+        #gender-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        #gender-slider::-moz-range-thumb {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title" id="">Gender Selector</div>
+        <div class="title" id="title"></div>
+        <input type="range" id="gender-slider" min="1" max="100" value="50">
+    </div>
+    <script>
+        const slider = document.getElementById('gender-slider');
+        const title = document.getElementById('title');
+        const body = document.body;
+
+        slider.addEventListener('input', () => {
+            const value = parseInt(slider.value);
+            let color;
+            let text;
+
+            if (value < 33.33) {
+                text = 'Male';
+            } else if (value < 66.66) {
+                text = '🌈';
+            } else {
+                text = 'Female';
+            }
+
+            if (value < 40) {
+                color = `linear-gradient(to right, blue ${100 - (value * 2.5)}%, transparent ${100 - (value * 2.5)}%)`;
+            } else if (value < 60) {
+                color = 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)';
+            } else {
+                color = `linear-gradient(to left, transparent ${100 - ((100 - value) * 2.5)}%, #FF69B4 ${100 - ((100 - value) * 2.5)}%)`;
+            }
+
+            body.style.background = color;
+            title.innerText = text;
+        });
+    </script>
+</body>
+</html>
