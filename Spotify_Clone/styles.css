@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.right {
+    width: 75vw;
+    position: relative;
+}
+
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.home ul li img {
+    font-size: 70px;
+}
+
+.library {
+    height: 100%;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    align-items: center;
+}
+
+.heading img {
+    width: 30px;
+}
+
+.create {
+    background-color: #222222;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.create h5 {
+    font-size: 18px;
+}
+
+.create p {
+    font-size: 15px;
+}
+
+.create-btn {
+    margin: 10px;
+    border: none;
+    background: white;
+    font-weight: 700;
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.create-btn:hover {
+    font-size: 13px;
+    transition: ease 0.2s;
+}
+
+.podcast {
+    background-color: #222222;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.podcast h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.podcast p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.podcast-btn {
+    margin: 10px;
+    border: none;
+    background: white;
+    font-weight: 700;
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.podcast-btn:hover {
+    font-size: 13px;
+    transition: ease 0.2s;
+}
+
+.library {
+    min-height: 50vh;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.footer a {
+    font-weight: bold;
+    color: gray;
+    margin-right: 30px;
+    padding-left: 10px;
+}
+
+.language {
+    margin-top: 20px;
+    border: 1px solid white;
+    height: 35px;
+    border-radius: 25px;
+    background: none;
+    color: white;
+}
+
+.language:hover {
+    border: 2px solid white;
+}
+
+.language a {
+    color: white;
+}
+
+.language i {
+    padding-right: 10px;
+}
+
+.right {
+    margin: 10px 5px 0 -10px;
+}
+
+.arrow {
+    width: 25px;
+}
+
+.signup-btn {
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: gray;
+    margin-right: 20px;
+}
+
+.signup-btn:hover {
+    color: white;
+    transition: ease 0.3s;
+}
+
+.login-btn {
+    border: none;
+    background: white;
+    font-weight: 700;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.login-btn:hover {
+    font-size: 18px;
+    transition: ease 0.2s;
+}
+
+.header {
+    justify-content: space-between;
+    background-color: #101010;
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.playlists {
+    padding: 10px;
+}
+
+.artist-card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+/* .artist-card img{
+    width: 150px;
+}
+.artist-card button{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 50px;
+    margin-left: -50px;
+}
+.artist-card:hover{
+    background-color: #222222;
+    transition: ease 0.2s;
+} */
+.artist {
+    padding: 10px;
+}
+
+.artist-card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.artist-card img {
+    width: 150px;
+}
+
+.artist-card button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 50px;
+    margin-left: -55px;
+}
+
+.artist-card:hover {
+    background-color: #222222;
+    transition: ease 0.2s;
+}
+
+.albums {
+    padding: 10px;
+}
+
+.album-card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.album-card img {
+    width: 150px;
+}
+
+.album-card button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 50px;
+    margin-left: -55px;
+}
+
+.album-card:hover {
+    background-color: #222222;
+    transition: ease 0.2s;
+}
+
+/* .playbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    filter: invert(1);
+    background: #e2d9d9;
+    border-radius: 10px;
+    width: 90%;
+    padding: 12px;
+    width: 70vw;
+    min-height: 30px;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+} */
